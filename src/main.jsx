@@ -8,7 +8,6 @@ import Form from './pages/form.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      {/* Navbar com efeito glassmorphism */}
       <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg py-4">
         <div className="max-w-7xl mx-auto px-4 flex justify-center space-x-8">
           <Link 
@@ -28,7 +27,6 @@ createRoot(document.getElementById('root')).render(
         </div>
       </nav>
 
-      {/* Conteúdo com padding para não ficar atrás da navbar */}
       <div className="pt-20 min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
         <Routes>
           <Route path='/' element={<App />} />
